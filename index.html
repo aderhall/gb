@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Garageband</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="vertical box" id="root" style="height: 800px; width: 1200px;">
+    <div class="pane" id="topbar" style="height: 17px; background: #999;"></div>
+		<div class="pane" id="controlpanel" style="height: 100px;">
+			<div class="horizontal box">
+				<div class="ghost pane" style="width: 33.3%;">
+					<div class="horizontal box">
+						<div class="pane button topbutton" style="left: 18%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-sliders-h"></i></div>
+            <div class="pane button topbutton" style="left: 18%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-pen"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-backward"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-forward"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-stop"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-play"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-circle"></i></div>
+            <div class="pane button topbutton" style="left: 23%; top: 37.5%; height: 25%; width: 10%;"><i class="fas fa-sync-alt"></i></div>
+					</div>
+				</div>
+				<div class="ghost pane" style="top: 25%; height: 50%; width: 33.3%;">
+          <div class="horizontal box">
+            <div class="pane lcd" style="left: 25%; width: 50%;"></div>
+          </div>
+        </div>
+				<div class="ghost pane" style="width: 33.3%;"></div>
+			</div>
+		</div>
+		<div class="pane" id="workarea" style="height: 82%;">
+      <div class="horizontal box">
+        <div class="pane" style="width: 23%;">
+          <div class="vertical box" style="background: #404040; overflow-y: scroll;">
+            <div class="pane track"></div>
+            <div class="pane track"></div>
+            <div class="pane track"></div>
+          </div>
+        </div>
+        <div class="pane" style="width: 77%; padding: 0;">
+          <div class="vertical box" style="background: #333">
+            <div class="pane" id="mixer" style="transition: height 1s;height: 100%; padding: 0; border: 0;">
+              <div class="vertical box" style="background: #333; overflow: scroll;">
+                <div class="pane region" style="width: 70%;"></div>
+                <div class="pane region" style="left: 20%; width: 65%;"></div>
+                <div class="pane region" style="width: 120%;"></div>
+              </div>
+            </div>
+            <div class="pane" id="editor" style="height: 0%; transition: height 1s;">
+              <div class="horizontal box" style="padding: 0;">
+                <div class="pane" style="width: 25%; padding: 0; border: 0;">
+                  <div class="vertical box" style="padding: 0;">
+                    <div class="pane" style="height: 22px; border-right: 2px #777 solid; border-bottom: 2px #777 solid; border-left: 0;"></div>
+                    <div class="pane" style="min-height: 85%;"></div>
+                  </div>
+                </div>
+                <div class="pane" style="width: 75%; padding: 0; border: 0;">
+                  <div class="horizontal box" style="padding: 0;">
+                    <div class="pane" style="padding: 0; width: 10%;">
+                      <div class="vertical box" style="padding: 0;">
+                        <div class="pane" style="height: 15%;"></div>
+                        <div class="pane" style="height: 85%; background: #FFF;"></div>
+                      </div>
+                    </div>
+                    <div class="pane" style="padding: 0; width: 90%;">
+                      <div class="vertical box" style="padding: 0;">
+                        <div class="pane" style="height: 15%; background: #9F9;"></div>
+                        <div class="pane" style="height: 85%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pane" id="bottombar" style="height: 17px; background: #333;"></div>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>
